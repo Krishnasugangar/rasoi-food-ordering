@@ -5,7 +5,7 @@ Food delivery for a small set of Indian kitchens. Guests browse active restauran
 ## Tech stack
 
 - Java 17, Spring Boot 3.3, Spring Web, Spring Data JPA, Spring Security, Spring Validation
-- JWT authentication 
+- JWT authentication (8-hour tokens by default)
 - SpringDoc OpenAPI (Swagger UI)
 - MySQL 8, with a dedicated application user named `rasoi`
 - React 18 (Vite), React Router v6, Axios, Tailwind CSS
