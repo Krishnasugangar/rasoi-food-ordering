@@ -20,7 +20,7 @@ cd "C:\freelance projects\Food delivery system\fooddeliverysystem"
 Copy-Item .env.example .env
 ```
 
-Generate values, then paste them into `.env` in place of the placeholders. `JWT_SECRET` is used as raw text and must be at least 32 characters. The database user is `rasoi`, not `root`.
+Generate values, then paste them into `.env` in place of the placeholders. `JWT_SECRET` is used as raw text and must be at least 32 characters. 
 
 ```powershell
 $jwt = [Convert]::ToBase64String((1..48 | ForEach-Object { Get-Random -Maximum 256 }))
