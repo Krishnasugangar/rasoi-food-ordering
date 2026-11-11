@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-stone-100 text-stone-900 antialiased;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  @apply w-full rounded-lg border border-stone-300 bg-white px-3 py-2 text-sm outline-none ring-orange-200 focus:border-orange-500 focus:ring-2;
+}

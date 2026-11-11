@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:rasoi;MODE=MySQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: false
+  sql:
+    init:
+      mode: never
+
+app:
+  jwt:
+    secret: test-jwt-secret-key-must-be-long-enough-32b
+    expiration-ms: 3600000
+  admin:
+    email: ""
+    password: ""
+  demo-seed: false
