@@ -11,7 +11,7 @@ Food delivery for a small set of Indian kitchens. Guests browse active restauran
 - React 18 (Vite), React Router v6, Axios, Tailwind CSS
 - Maven, npm, and Docker Compose
 
-
+## First-time configuration (PowerShell)
 
 From this folder:
 
