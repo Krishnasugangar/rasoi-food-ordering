@@ -1,4 +1,4 @@
-
+# Rasoi
 
 Food delivery for a small set of Indian kitchens. Guests browse active restaurants and available dishes. Customers place a cash-on-delivery order. Admins move that order through the kitchen. Older Stripe rows, if any, stay readable, but new orders cannot use Stripe or a client-supplied payment reference.
 
