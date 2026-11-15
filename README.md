@@ -123,6 +123,6 @@ Vite stays on http://localhost:5173 and proxies `/api` to http://localhost:8080.
 - Removing a dish marks it unavailable so older orders keep their lines.
 - A customer who asks for someone else's order gets HTTP 404. A missing or invalid token on a protected API gets HTTP 401.
 
-## Checkout path
+
 
 `OrderForm.jsx` posts `/api/orders` with the restaurant id, contact details, `paymentMethod: "COD"`, and dish ids with quantities. Nginx or the Vite dev server forwards that to `OrderController`, which validates the body and calls `OrderService.create`. The service rejects Stripe and any payment reference, loads the restaurant and each dish, checks that the kitchen is active and every dish belongs to it and is available, multiplies the stored prices by the quantities, and saves the order and its lines in one transaction. MySQL then holds a `PLACED` / `PENDING` cash order.
